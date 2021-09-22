@@ -1,0 +1,1410 @@
+* {
+  margin: 0; 
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+/*
+========================================
+Start Basic Setup
+========================================
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a,
+span,
+label {
+  display: inline-block;
+}
+
+a,
+a:focus {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 0;
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+========================================
+End Basic Setup
+========================================
+*/
+
+/*
+========================================
+Start Font Size
+========================================
+*/
+
+.font-size-13 {
+  font-size: 13px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-15 {
+  font-size: 15px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-23 {
+  font-size: 23px;
+}
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.font-size-36 {
+  font-size: 36px;
+}
+
+.font-size-60 {
+  font-size: 60px;
+}
+
+/*
+========================================
+End Font Size
+========================================
+*/
+
+/*
+========================================
+Start Font Color
+========================================
+*/
+
+.font-color-f4 {
+  color: #f4f8ff;
+}
+
+.font-color-ff {
+  color: #ffffff;
+}
+
+.font-color-f2 {
+  color: #f2f7ff;
+}
+
+.font-color-00 {
+  color: #000000;
+}
+
+.font-color-33 {
+  color: #333333;
+}
+
+.font-color-08 {
+  color: #080808;
+}
+
+.font-color-01 {
+  color: #010101;
+}
+
+.font-color-66 {
+  color: #666666;
+}
+
+.font-color-ab {
+  color: #ab0534;
+}
+
+.font-color-ed {
+  color: #ed8000;
+}
+
+.font-color-4c {
+  color: #4c4c4c;
+}
+
+.font-color-4d {
+  color: #4d4d4d;
+}
+
+/*
+========================================
+End Font Color
+========================================
+*/
+
+/*
+========================================
+Start Background Color
+========================================
+*/
+
+.bg-color-ab {
+  background: #ab0534;
+}
+
+.bg-color-f4 {
+  background: #f4f8ff;
+}
+
+.bg-color-ff {
+  background: #ffffff;
+}
+
+.bg-color-f7 {
+  background: #f7f9fa;
+}
+
+.bg-color-29 {
+  background: #292662;
+}
+
+/*
+========================================
+End Background Color
+========================================
+*/
+
+.img-100 {
+  width: 100%;
+}
+
+/*
+========================================
+Start Reusable Components
+========================================
+*/
+
+.transition-linear-3s {
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.transition-linear-5s {
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.transition-ease-3s {
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.transition-ease-5s {
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+/* hover Underline Effects */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #f2f7ff;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  -o-transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+/* hover Underline Effects */
+
+/* Animated Fill Button */
+
+.animated-fill-button {
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.animated-fill-button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Animated Fill Button */
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pulse-grow:hover,
+.hvr-pulse-grow:focus,
+.hvr-pulse-grow:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+/* Pulse Grow */
+
+/*
+========================================
+End Reusable Components
+========================================
+*/
+
+/*
+====================
+Start Preloader
+====================
+*/
+
+.preloader {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 99999;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  background: #fff;
+}
+
+/*
+====================
+End Preloader
+====================
+*/
+
+/*
+========================================
+Start Header Section Css
+========================================
+*/
+
+.nav {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/*
+=======================
+Start Toggle Seach Bar
+=======================
+*/
+
+.header-search-wrapper {
+  position: relative;
+  float: right;
+  text-align: center;
+}
+
+.header-search-wrapper .search-main {
+  line-height: 45px;
+  padding: 0px 20px;
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header-search-wrapper .search-form-main {
+  position: absolute;
+  top: 160px;
+  right: 0px;
+  width: 350px;
+  box-shadow: 1px 1px 7px rgb(0 0 0 / 15%);
+  border-top: 3px solid #dd0643;
+  ;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.active-class {
+  visibility: visible !important;
+  opacity: 1 !important;
+  top: 65px !important;
+}
+
+.search-form-main:after {
+  position: absolute;
+  top: 0;
+  content: "";
+  right: 0;
+  border: 15px solid transparent;
+  border-top: 0px;
+  border-bottom: 15px solid #dd0643;
+  ;
+  width: 0;
+  transform: translate(-42%, -119%);
+}
+
+.search-form-main .search-form {
+  padding: 20px;
+  overflow: hidden;
+  background: #f1faee;
+}
+
+.search-form .search-field {
+  float: left;
+  width: 75%;
+  margin-left: 0px !important;
+  font-size: 17px;
+  padding: 16px 14px;
+}
+
+.search-form .search-submit {
+  float: right;
+  width: 25%;
+  border-radius: 0;
+  display: inline-block;
+  font-size: 17px;
+  border: 0;
+  cursor: pointer;
+  background: #dd0643;
+  color: #fff;
+  outline: 0;
+  text-align: center;
+  padding: 16px 10px;
+}
+
+/*
+=======================
+End Toggle Seach Bar
+=======================
+*/
+
+/*
+=====================
+Start Hamburger Menu
+=====================
+*/
+
+.hamburger-menu {
+  display: none;
+}
+
+.site-navbar ul {
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 75px);
+  left: 0;
+  top: 75px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #ab0534;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.site-navbar ul li {
+  width: 100%;
+  text-align: center;
+}
+
+.site-navbar ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-navbar ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.site-navbar ul.open {
+  max-height: 100vh;
+  overflow: visible;
+}
+
+/* nav-toggler css start */
+
+.nav-toggler {
+  border: 3px solid #fff !important;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+}
+
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-toggler span:before {
+  content: "";
+  -webkit-transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  transform: translateY(-9px);
+}
+
+.nav-toggler span:after {
+  content: "";
+  -webkit-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  transform: translateY(6px);
+}
+
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+
+.nav-toggler.toggler-open span:before {
+  -webkit-transform: translateY(0px) rotate(45deg);
+  -ms-transform: translateY(0px) rotate(45deg);
+  transform: translateY(0px) rotate(45deg);
+}
+
+.nav-toggler.toggler-open span:after {
+  -webkit-transform: translateY(-3px) rotate(-45deg);
+  -ms-transform: translateY(-3px) rotate(-45deg);
+  transform: translateY(-3px) rotate(-45deg);
+}
+
+/* nav-toggler css End */
+
+/*
+=====================
+End Hamburger Menu
+=====================
+*/
+
+/*
+===================================
+Start Sticky Menu
+===================================
+*/
+
+.sticky {
+  position: fixed !important;
+  left: 0;
+  z-index: 99999;
+  right: 0;
+  background-color: #ab0534;
+  top: 0;
+  width: 100%;
+  padding: 12px 0 !important;
+  -webkit-transition: 0.4s ease-in;
+  -o-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  -webkit-transition: 0.4s linear;
+}
+
+/*
+===================================
+End Sticky Menu
+===================================
+*/
+
+/*
+====================
+Start Hero
+====================
+*/
+
+.hero-content a {
+  padding: 28px 60px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 30px;
+}
+
+/*
+====================
+End Hero
+====================
+*/
+
+/*
+========================================
+End Header Section Css
+========================================
+*/
+
+/*
+========================================
+Start Course Categories Section Css
+========================================
+*/
+
+.course-categories {
+  padding-top: 78px;
+  padding-bottom: 96px;
+}
+
+.categories-title h2::after {
+  position: absolute;
+  content: "";
+  top: 62px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 165px;
+  height: 2px;
+  background: #020202;
+}
+
+.categories-row {
+  margin-top: 120px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.categories-row > * {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 16px;
+}
+
+.categories-list:hover {
+  background: #ab0534;
+}
+
+.categories-list:hover span,
+.categories-list:hover h3 {
+  color: #f2f7ff;
+}
+
+.categories-list:hover .top-border,
+.categories-list:hover .bottom-border,
+.categories-list:hover .left-border,
+.categories-list:hover .right-border {
+  background: transparent;
+}
+
+.top-border,
+.bottom-border {
+  width: 150px;
+  height: 2px;
+  background: #a6a6a6;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.top-border {
+  top: 0;
+}
+
+.bottom-border {
+  bottom: 0;
+}
+
+.left-border,
+.right-border {
+  height: 140px;
+  width: 2px;
+  background: #a6a6a6;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.left-border {
+  left: 0;
+}
+
+.right-border {
+  right: 0;
+}
+
+/*
+========================================
+End Course Categories Section Css
+========================================
+*/
+
+/*
+========================================
+Start Top Courses  Section Css
+========================================
+*/
+
+.top-courses {
+  padding-top: 98px;
+  padding-bottom: 55px;
+}
+
+.top-courses-row {
+  margin-left: -21px;
+  margin-right: -21px;
+}
+
+.top-courses-row > * {
+  padding-left: 21px;
+  padding-right: 21px;
+  margin-bottom: 45px;
+}
+
+.top-courses-desc p {
+  width: 63%;
+  margin-top: 18px;
+}
+
+.top-courses-btn a {
+  padding: 17px 40px;
+  border: 1px solid #111111;
+  margin-top: 34px;
+}
+
+.top-courses-item {
+  border: 2px solid #f0f0f0;
+}
+
+.border-hvr {
+  -webkit-transition: border-width 0.3s linear !important;
+  -o-transition: border-width 0.3s linear !important;
+  transition: border-width 0.3s linear !important;
+}
+
+.top-courses-item:hover .border-hvr {
+  border-width: 0px !important;
+}
+
+.shadow-hvr {
+  -webkit-transition: -webkit-box-shadow 0.3s linear !important;
+  transition: -webkit-box-shadow 0.3s linear !important;
+  -o-transition: box-shadow 0.3s linear !important;
+  transition: box-shadow 0.3s linear !important;
+  transition: box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear !important;
+}
+
+.shadow-hvr:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(171, 5, 52, 0.5);
+}
+
+.top-courses-item:hover .overlay {
+  opacity: 1;
+}
+
+.top-courses-specefication h3 {
+  line-height: 27px;
+}
+
+span.icon-plus {
+  font-size: 50px;
+  color: #fff;
+}
+
+/*
+========================================
+End Top Courses  Section Css
+========================================
+*/
+
+/*
+========================================
+Start Popular Course Section Css
+========================================
+*/
+
+.popular-course {
+  padding-top: 95px;
+  padding-bottom: 100px;
+}
+
+.popular-course-row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.popular-course-title p {
+  width: 31%;
+  margin-top: 18px;
+}
+
+.popular-course-row > * {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 30px;
+}
+
+.img-one,
+.img-two,
+.img-three {
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative !important;
+  background-repeat: no-repeat !important;
+  display: flex !important;
+  padding-top: 26.60% !important;
+  border-radius: 3px;
+}
+
+.img-one {
+  background: url("../images/popular-course1.png");
+}
+
+.img-two {
+  background: url("../images/popular-course2.png");
+}
+
+.img-three {
+  background: url("../images/popular-course3.png");
+}
+
+.popular-text {
+  position: absolute;
+  top: 0;
+  display: flex;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+/*
+========================================
+End Popular Course Section Css
+========================================
+*/
+
+/*
+========================================
+Start Best Sell Section Css
+========================================
+*/
+
+.best-sell {
+  padding-top: 98px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.best-sell-title p {
+  width: 63%;
+  margin-top: 18px;
+}
+
+.best-sell-btn a {
+  padding: 17px 40px;
+  border: 1px solid #111111;
+  margin-top: 34px;
+}
+
+.best-sell-row {
+  margin-top: 93px;
+  margin-right: -22px;
+  margin-left: -22px;
+}
+
+.best-sell-row > * {
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 50px;
+}
+
+.best-sell-img img {
+  width: 100%;
+}
+
+.best-sell-item {
+  border: 2px solid #f0f0f0;
+}
+
+.best-sell-item:hover .border-hvr {
+  border-width: 0px !important;
+}
+
+.best-sell-specefication h3 {
+  line-height: 27px;
+}
+
+span.icon-plus {
+  font-size: 50px;
+  color: #fff;
+}
+
+/*
+========================================
+End Best Sell Section Css
+========================================
+*/
+
+/*
+========================================
+Start Achieve Goals Section Css
+========================================
+*/
+
+.achieve-goals {
+  padding-top: 97px;
+  padding-bottom: 100px;
+}
+
+.achieve-goals-title p {
+  width: 31%;
+  margin-top: 18px;
+}
+
+.achieve-goals-list h3 {
+  margin-top: 32px;
+}
+
+.achieve-goals-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.achieve-goals-row > * {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 17px;
+}
+
+.achieve-goals-list p {
+  width: 86%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.achieve-goals-list {
+  border: 2px solid #f0f0f0 !important;
+}
+
+.achieve-goals-list:hover .border-hvr {
+  border-width: 0px !important;
+}
+
+/*
+========================================
+End Achieve Goals Section Css
+========================================
+*/
+
+/*
+========================================
+Start  clients-appriciation Section Css
+========================================
+*/
+
+.clients-appriciation {
+  padding-top: 102px;
+}
+
+.clients-appriciation-title p {
+  width: 31%;
+  margin-top: 18px;
+}
+
+.clients-appriciation-row {
+  margin-top: 88px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.clients-appriciation-row .col-md-6:first-child {
+  border-bottom: 1px solid #e6e7e8;
+}
+
+.clients-appriciation-row .col-md-6:last-child {
+  border-left: 1px solid #e6e7e8;
+  border-bottom: 1px solid #e6e7e8;
+}
+
+.clients-appriciation-row > * {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+
+.blockquote-desc {
+  font-family: "Roboto";
+  font-style: italic;
+  width: 80%;
+}
+
+.clients-appriciation-desc img {
+  top: 0;
+  left: 0;
+}
+
+.video-area img {
+  width: 100%;
+}
+
+.video-area a {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+/*
+========================================
+End  clients-appriciation Section Css
+========================================
+*/
+
+/*
+========================================
+Start Brand Section Css
+========================================
+*/
+.brand-section {
+  padding-top: 60px;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  font-size: 20px;
+  color: #BABCBC;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  font-size: 20px;
+  content: 'next';
+  color: #BABCBC;
+}
+
+.brand-swiper {
+  width: 975px;
+}
+/*
+========================================
+End Brand Section Css
+========================================
+*/
+
+/*
+========================================
+Start Blog Section Css
+========================================
+*/
+
+.blog-seciton {
+  padding-top: 95px;
+  padding-bottom: 100px;
+}
+
+/*.blog-box:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+*/
+.blog-title p {
+  width: 31%;
+  margin-top: 18px;
+}
+
+.blog-box {
+  border: 2px solid #f0f0f0 !important;
+   min-height: 491px;
+}
+
+.blog-box:hover .border-hvr {
+  border-width: 0px !important;
+}
+
+.blog-desc h3 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.blog-desc {
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+}
+
+.blog-desc p {
+  margin-bottom: 15px;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  opacity: 1;
+  border: 2px solid #999999;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4D4D4D;
+  transform: scale(1);
+}
+/*
+========================================
+End Blog Section Css
+========================================
+*/
+
+/*
+========================================
+Start Become Instructor Css
+========================================
+*/
+
+.become-instructor {
+  background: url("../images/become-instructor.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-area form {
+  width: 680px;
+}
+
+input[type="text"] {
+  width: 60%;
+  margin-left: 65px;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Roboto-400";
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Roboto-400";
+}
+
+input[type="text"]::-moz-placeholder {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Roboto-400";
+}
+
+input[type="text"]:-ms-input-placeholder {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Roboto-400";
+}
+
+input[type="text"]::-ms-input-placeholder {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Roboto-400";
+}
+
+input[type="text"]::placeholder {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Roboto-400";
+}
+
+.form-area form input[type="submit"] {
+  width: 29.5%;
+  padding-top: 21px;
+  padding-bottom: 19px;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Roboto-500";
+}
+
+/*
+========================================
+End Become Instructor Section Css
+========================================
+*/
+
+/*
+========================================
+Start Footer Section Css
+========================================
+*/
+
+.address-col {
+  width: 383px;
+}
+
+.address-desc h3 {
+  margin-bottom: 6px;
+}
+
+.help-col {
+  width: 243px;
+}
+
+.about-col {
+  width: 204px;
+}
+
+.tools-col {
+  width: 228px;
+}
+
+.touch-col {
+  width: 112px;
+}
+
+.help-col h3,
+.about-col h3,
+.tools-col h3,
+.touch-col h3 {
+  margin-bottom: 13px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #494679;
+  padding-top: 27px;
+}
+
+/*
+========================================
+End Footer Section Css
+========================================
+*/
+
+/*
+===================================
+Start Scroll to Top 
+===================================
+*/
+.scroll-top {
+  display: none;
+  position: fixed;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  line-height: 40px;
+  text-align: center;
+  background: #dd0643;
+  bottom: 40px;
+}
+
+/* Bob */
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+.hvr-bob {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-bob:hover,
+.hvr-bob:focus,
+.hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: 0.4s, 1.5s;
+  animation-duration: 0.4s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/*
+===================================
+End Scroll to Top 
+===================================
+*/
